@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="sunGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#1c1917" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sunGrad)" />
+  <g fill="#ea580c">
+    <circle cx="80" cy="150" r="25" />
+    <circle cx="140" cy="120" r="30" fill="#f59e0b" />
+    <circle cx="200" cy="140" r="35" />
+    <circle cx="260" cy="110" r="28" fill="#f59e0b" />
+    <circle cx="320" cy="150" r="25" />
+  </g>
+  <line x1="80" y1="150" x2="80" y2="220" stroke="#15803d" stroke-width="4" />
+  <line x1="140" y1="120" x2="140" y2="220" stroke="#15803d" stroke-width="4" />
+  <line x1="200" y1="140" x2="200" y2="220" stroke="#15803d" stroke-width="4" />
+  <line x1="260" y1="110" x2="260" y2="220" stroke="#15803d" stroke-width="4" />
+  <line x1="320" y1="150" x2="320" y2="220" stroke="#15803d" stroke-width="4" />
+  <path d="M50 220 L110 220 L100 270 L60 270 Z" fill="#9a3412" />
+  <path d="M170 220 L230 220 L220 270 L180 270 Z" fill="#c2410c" />
+  <path d="M290 220 L350 220 L340 270 L300 270 Z" fill="#9a3412" />
+</svg>

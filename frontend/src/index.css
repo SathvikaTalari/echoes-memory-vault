@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #08090d;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 15% 45%, rgba(234, 88, 12, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 85% 65%, rgba(127, 29, 29, 0.06) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: #fef3c7;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1016;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e261f;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #78350f;
+}
+
+/* Typography utilities */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Vintage parchment effect */
+.parchment-card {
+  background: linear-gradient(135deg, rgba(28, 25, 23, 0.85) 0%, rgba(18, 17, 18, 0.95) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), inset 0 0 20px rgba(245, 158, 11, 0.03);
+  backdrop-filter: blur(12px);
+}
+
+.parchment-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.parchment-card-hover:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.9), 0 0 25px rgba(245, 158, 11, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Vintage Book Page Border */
+.ornate-border {
+  position: relative;
+}
+.ornate-border::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px dashed rgba(245, 158, 11, 0.2);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Candle flame animations */
+@keyframes flameWave {
+  0%, 100% {
+    transform: scale(1) skewX(0deg);
+  }
+  25% {
+    transform: scale(0.96, 1.05) skewX(-1.5deg);
+  }
+  50% {
+    transform: scale(1.04, 0.97) skewX(1deg);
+  }
+  75% {
+    transform: scale(0.98, 1.02) skewX(-0.8deg);
+  }
+}
+
+.animate-flame-wave {
+  animation: flameWave 2.8s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Marigold petal falling */
+@keyframes petalFall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(105vh) translateX(50px) rotate(360deg) scale(0.6);
+    opacity: 0;
+  }
+}
+
+.falling-petal {
+  position: absolute;
+  pointer-events: none;
+  animation-name: petalFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Audio waveform bars animation */
+@keyframes pulseAudioBar {
+  0%, 100% { height: 12%; }
+  50% { height: 95%; }
+}
+
+.audio-bar-anim {
+  animation: pulseAudioBar 1.2s ease-in-out infinite;
+}

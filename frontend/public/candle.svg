@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7c2" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="80%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="waxGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2c8a0" />
+      <stop offset="50%" stop-color="#fff5e6" />
+      <stop offset="100%" stop-color="#d4b483" />
+    </linearGradient>
+  </defs>
+  <!-- Candle body -->
+  <rect x="22" y="26" width="20" height="34" rx="3" fill="url(#waxGrad)" />
+  <ellipse cx="32" cy="26" rx="10" ry="3" fill="#ffecc9" />
+  <!-- Wick -->
+  <line x1="32" y1="26" x2="32" y2="18" stroke="#3d2b1f" stroke-width="2" stroke-linecap="round" />
+  <!-- Flame aura -->
+  <circle cx="32" cy="14" r="14" fill="url(#flameGlow)" opacity="0.6" />
+  <!-- Flame core -->
+  <path d="M32 4 C35 10 37 15 35 19 C33 22 31 22 29 19 C27 15 29 10 32 4 Z" fill="#ffb703" />
+  <path d="M32 9 C33.5 13 34.5 16 33.5 18 C32.5 19.5 31.5 19.5 30.5 18 C29.5 16 30.5 13 32 9 Z" fill="#ffffff" />
+</svg>

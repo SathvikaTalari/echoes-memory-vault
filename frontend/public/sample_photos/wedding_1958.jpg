@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1c1917" />
+  <rect x="40" y="180" width="320" height="120" fill="#292524" />
+  <line x1="40" y1="220" x2="360" y2="220" stroke="#44403c" stroke-width="2" />
+  <line x1="40" y1="260" x2="360" y2="260" stroke="#44403c" stroke-width="2" />
+  <circle cx="165" cy="110" r="28" fill="#fde68a" opacity="0.9" />
+  <path d="M130 240 Q 165 140 200 240 Z" fill="#fef3c7" opacity="0.95" />
+  <circle cx="235" cy="105" r="28" fill="#fde68a" opacity="0.9" />
+  <rect x="215" y="135" width="40" height="105" rx="6" fill="#1c1917" stroke="#78716c" stroke-width="2" />
+  <path d="M140 100 Q 110 180 135 230" fill="none" stroke="#fef9c3" stroke-width="3" stroke-dasharray="3 3" />
+  <rect x="8" y="8" width="384" height="284" fill="none" stroke="#d97706" stroke-width="2" opacity="0.6" />
+  <text x="200" y="285" fill="#f59e0b" font-size="13" font-family="Georgia" text-anchor="middle">October 22, 1958 • Oaxaca</text>
+</svg>
